@@ -1,0 +1,56 @@
+
+
+.category-selector-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.neomorph-select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: #e0e0e0;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+    color: #555;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.neomorph-select::after {
+    content: '▼';
+    font-size: 0.8em;
+    color: #888;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.neomorph-select option {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+.neomorph-select:focus {
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1),
+        inset -2px -2px 4px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 480px) {
+    .category-selector-container {
+        margin-bottom: 15px;
+    }
+
+    .neomorph-select {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+}
