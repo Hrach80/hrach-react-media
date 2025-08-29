@@ -186,10 +186,9 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .media-player-container {
-        width: 90%;
+        width: 100%;
         padding: 20px;
         box-sizing: border-box;
     }
@@ -200,7 +199,7 @@ body {
     }
 
     .track-title {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .track-artist {
@@ -208,13 +207,45 @@ body {
     }
 
     .neomorph-button {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         font-size: 1.2em;
     }
 
     .search-button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .media-player-container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .track-album-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .track-title {
+        font-size: 1em;
+    }
+
+    .track-artist {
+        font-size: 0.9em;
+    }
+
+    .neomorph-button {
         width: 40px;
         height: 40px;
+        font-size: 1.2em;
+    }
+
+    .search-button {
+        width: 30px;
+        height: 30px;
     }
 }

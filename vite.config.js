@@ -11,7 +11,7 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
         name: 'Մեդիա Նվագարկիչ',
-        short_name: 'Մեդիա',
+        short_name: 'Մեդիա Հ․Վ․',
         description: 'Անկախ երաժշտության նվագարկիչ',
         theme_color: '#e0e0e0',
         background_color: '#e0e0e0',

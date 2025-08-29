@@ -14,7 +14,6 @@ function App() {
   } = useRegisterSW();
 
   useEffect(() => {
-    // Log a message when the app is ready for offline use
     if (offlineReady) {
       console.log('Հավելվածը պատրաստ է օֆլայն ռեժիմի համար');
     }
@@ -25,7 +24,6 @@ function App() {
     setNeedRefresh(false);
   };
 
-  // If a new version is available, show a notification
   if (needRefresh) {
     return (
       <div className="pwa-notification">
@@ -35,7 +33,6 @@ function App() {
     );
   }
 
-  // The main application content
   return (
     <div className="App">
       <CategorySelector onSelectCategory={setSelectedCategory} />
